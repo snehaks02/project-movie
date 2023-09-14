@@ -1,0 +1,12 @@
+<div class="movie-card-container">
+    <div class="movie-card" *ngFor="let movie of movies; let i = index" (click)="openMovieWebsite(i)">
+      <div class="poster">
+        <img [src]="movie.posterUrl" alt="{{ movie.name }} Poster">
+      </div>
+      <div class="movie-info">
+        <h2>{{ movie.name }}</h2>
+        <p>Release Date: {{ movie.release_date }}</p>
+      </div>
+    </div>
+  </div>
+  
